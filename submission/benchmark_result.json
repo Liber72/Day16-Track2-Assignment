@@ -1,0 +1,71 @@
+{
+  "dataset": "creditcard (Credit Card Fraud Detection)",
+  "dataset_info": {
+    "total_samples": 284807,
+    "legit_samples": 284315,
+    "fraud_samples": 492,
+    "fraud_ratio_pct": 0.173
+  },
+  "model": "LightGBM (LGBMClassifier, class_weight=balanced)",
+  "instance_type": "t3.medium (2 vCPU / 4 GB RAM)",
+  "preprocessing": "StandardScaler on Amount and Time columns",
+  "load_data_time_s": 2.431,
+  "training_time_s": 15.3405,
+  "best_iteration": 500,
+  "optimal_threshold": 0.91,
+  "auc_roc": 0.98024,
+  "accuracy": 0.999561,
+  "f1_score": 0.86631,
+  "precision": 0.910112,
+  "recall": 0.826531,
+  "confusion_matrix": {
+    "true_negatives": 56856,
+    "false_positives": 8,
+    "false_negatives": 17,
+    "true_positives": 81
+  },
+  "inference_latency_1row_ms": 1.4274,
+  "inference_throughput_1000rows_ms": 17.9307,
+  "top_10_features": [
+    {
+      "feature": "V14",
+      "importance": 634
+    },
+    {
+      "feature": "V4",
+      "importance": 591
+    },
+    {
+      "feature": "V7",
+      "importance": 478
+    },
+    {
+      "feature": "V26",
+      "importance": 478
+    },
+    {
+      "feature": "V12",
+      "importance": 473
+    },
+    {
+      "feature": "V10",
+      "importance": 460
+    },
+    {
+      "feature": "V16",
+      "importance": 448
+    },
+    {
+      "feature": "Amount",
+      "importance": 381
+    },
+    {
+      "feature": "V13",
+      "importance": 380
+    },
+    {
+      "feature": "Time",
+      "importance": 366
+    }
+  ]
+}

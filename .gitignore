@@ -12,11 +12,15 @@ override.tf.json
 *_override.tf.json
 .terraformrc
 terraform.rc
-
+kaggle.json
+*.tfvars
+*.tfstate*
+.terraform/
 # SSH Keys
 lab-key
 lab-key.pub
-
+note.md
 # Environment Variables
 .env
 .env.local
+ssh_config
